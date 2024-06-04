@@ -24,3 +24,12 @@ body {
     object-fit: cover;
 }
 
+.rocket {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+    animation: landing 5s ease-out forwards;
+}
+
