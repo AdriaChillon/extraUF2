@@ -10,5 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
         audio.play();
         playButtonContainer.style.display = "none";  // Amaga el botó SVG
     });
-});
 
+    audio.addEventListener("ended", function() {
+        playButtonContainer.style.display = "block";  // Mostra el botó SVG un cop ha finalitzat l'àudio
+        rocket.style.animationPlayState = "paused";  // Opcional: reinicia l'animació
+    });
+});
