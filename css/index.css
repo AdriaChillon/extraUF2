@@ -6,7 +6,6 @@ body {
     margin: 0;
     background-color: #f0f0f0;
 }
-
 .container {
     position: relative;
     width: 80%;
@@ -17,13 +16,11 @@ body {
     border: 2px solid #ccc;
     background-color: #fff;
 }
-
 .surface {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .rocket {
     position: absolute;
     top: 0;
@@ -31,8 +28,8 @@ body {
     width: 200px;
     transform: translateX(-50%);
     animation: landing 5s ease-out forwards;
+    animation-play-state: paused;
 }
-
 @keyframes landing {
     0% {
         top: 0;
@@ -46,7 +43,16 @@ body {
         opacity: 1;
     }
 }
-
+.play-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.play-button {
+    cursor: pointer;
+}
 .credits {
     position: absolute;
     bottom: 10px;
@@ -55,4 +61,3 @@ body {
     padding: 5px;
     font-size: 12px;
 }
-
